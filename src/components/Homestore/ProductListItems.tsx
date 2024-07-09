@@ -1,5 +1,6 @@
 import { products } from '@/lib/product'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { ProductListcard } from '../productcards/productListcard'
 
@@ -10,7 +11,7 @@ const Clearpage = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-10 py-7 '>
                 {products.map((products)=>{
                    
-                        return <ProductListcard {...products}/>
+                        return <Link to={"/cart"}><ProductListcard {...products}/></Link>
                     
                 })}
                 
