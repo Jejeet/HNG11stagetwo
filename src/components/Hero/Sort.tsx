@@ -32,7 +32,7 @@ const Sort = () => {
         </div>
         <hr className='' />
     </div>
-    <div className='mt-6 space-x-2'>
+    <div className='mt-6 space-x-2 container'>
     <Button className="bg-[#C4D7ED] rounded-2xl">Color</Button>
     <Button className="bg-[#C4D7ED] rounded-2xl">Material</Button>
     <Button className="bg-[#C4D7ED] rounded-2xl">Type</Button>
