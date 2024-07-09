@@ -96,38 +96,38 @@ const CartHero = () => {
             
         </div>
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
-        <div className='flex justify-between h-36 my-3'>
+       
 
 
 
-<div className='flex flex-col'>
-<div className='flex flex-col space-y-3' >
-        <p>Discount or gift voucher?</p>
-        <div className='flex space-x-8'> 
-        <Input type="email" placeholder="Email" className='w-full flex-1' />
-        <Button className='bg-[#375D81] px-10' >REDEEM</Button>
-        </div>
+<div className='flex  items-center justify-between h-44 my-6 gap-5'>
+<div className='flex flex-col space-y-3 basis-[45%]' >
+    <p>Discount or gift voucher?</p>
+    <div className='flex space-x-8'> 
+    <Input type="email" placeholder="Email" className='w-full flex-1' />
+    <Button className='bg-[#375D81] px-10' >REDEEM</Button>
+    </div>
 </div>
-<div className='border  border-gray-900'></div>
-</div>
- <div className='flex items-center justify-between'>
+<div className='border border-gray-950 h-full '></div>
+
+<div className='flex items-start justify-between basis-[45%]'>
  <p>Subtotal</p>
- <div>
-   <div className='flex flex-col'>
-   <p  className='font-bold'># 180, 000</p>
-   <p>(Excluding delivery fee)</p>
-
-   </div>
-    <Button className= "">  PROCEED TO CHECKOUT</Button>
+ <div className='flex flex-col space-y-20'>
+   <div className='flex flex-col text-center space-y-2'>
+    <p  className=' font-bold text-xl '># 180, 000</p>
+    <p className='font-extralight text-sm'>(Excluding delivery fee)</p>
+  </div>
+    <Button className= "bg-[#375D81] px-10">  PROCEED TO CHECKOUT</Button>
  </div>
-
  </div>
+</div>
 
-<div>
+
+
 
     </div>
-    </div>
-    </div>
+   
+   
   )
 }
 
