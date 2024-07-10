@@ -6,7 +6,8 @@ import useEmblaCarousel, {
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-
+import ArrowRight from '@/assets/arrowRight.svg'
+import BackArrow from "@/assets/backarrow.svg"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 type CarouselApi = UseEmblaCarouselType[1]
@@ -215,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ChevronLeft className="size-40" strokeWidth={1} />
+      <ChevronLeft className="size-40 md:block hidden" strokeWidth={1} />
       <span className="sr-only">Previous slide</span>
     </button>
   )
@@ -242,7 +243,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ChevronRight className="size-40"  strokeWidth={1} />
+      <ChevronRight className=" size-40 md:block hidden "  strokeWidth={1} />
       <span className="sr-only">Next slide</span>
     </button>
   )
