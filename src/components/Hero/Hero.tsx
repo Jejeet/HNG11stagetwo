@@ -1,5 +1,5 @@
 import React from "react";
-import hero from "@/assets/Hero.png";
+
 import { Homebutton } from "../Buttons/Homebtn";
 const Hero = () => {
   return (
