@@ -4,7 +4,7 @@ import SimpleCard  from "../productcards/SimpleCard";
 
 const ProductDisplay = () => {
   return (
-    <div className="flex flex-row ">
+    <div className="hidden md:flex flex-row container ">
      {Diplay.map(dis=>(<SimpleCard title={dis.title} image={dis.image} id={dis.id}/>))}
     </div>
   );

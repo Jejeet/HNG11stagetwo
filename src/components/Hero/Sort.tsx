@@ -8,7 +8,7 @@ const Sort = () => {
     <div>
         <div className="sort container mb-8">
             <hr />
-            <div className=" flex justify-between mb-4">
+            <div className=" md:flex justify-between mb-4">
             <div className="flex  mt-2 ">
             <div className='flex flex-row gap-2  '>
             <div className='flex items-center border '>
@@ -32,7 +32,7 @@ const Sort = () => {
         </div>
         <hr className='' />
     </div>
-    <div className='mt-6 space-x-2 container'>
+    <div className='mt-6 space-x-2 container md:flex hidden'>
     <Button className="bg-[#C4D7ED] rounded-2xl">Color</Button>
     <Button className="bg-[#C4D7ED] rounded-2xl">Material</Button>
     <Button className="bg-[#C4D7ED] rounded-2xl">Type</Button>

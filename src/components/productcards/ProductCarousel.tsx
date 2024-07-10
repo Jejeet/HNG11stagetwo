@@ -21,7 +21,7 @@ export function ProductCarousel({products}:{products:NewProductType[]}) {
     >
       <CarouselContent className="items-center justify-center">
         {products.map(product=> (
-          <CarouselItem key={product.id} className=" w-full lg:basis-1/3 items-center justify-center  ">
+          <CarouselItem key={product.id} className="w-full lg:basis-1/3 items-center justify-center">
               <ProductInstore 
               id={product.id} 
               image={product.image} 
