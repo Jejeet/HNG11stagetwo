@@ -21,7 +21,8 @@ const CartHero = () => {
                 <div><p>Unit Price</p></div>
             </div>
         </div>
-          <Link to="/check"><div className='flex justify-between'>
+          <Link to="/check">
+            <div className='flex justify-between'>
             
             <div className='flex space-x-3'>
                 <div className='bg-gray-100'><img src={Chairs} alt=""  className='w-[100px]'/>
@@ -48,6 +49,7 @@ const CartHero = () => {
         </div>
         </Link>
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
+        <Link to={"/check"}>
         <div className='flex justify-between'>
             <div className='flex  mb-5 space-x-3'>
                 <div  className='bg-gray-100 '><img src={Chairs} alt=""  className='w-[100px]'/>
@@ -71,7 +73,9 @@ const CartHero = () => {
             </div>
             
         </div>
+        </Link>
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
+        <Link to={"/check"}>
         <div className='flex justify-between'>
             <div className='flex  mb-5 space-x-3'>
                 <div  className='bg-gray-100 '><img src={Chairs} alt=""  className='w-[100px]'/>
@@ -95,6 +99,7 @@ const CartHero = () => {
             </div>
             
         </div>
+        </Link>
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
        
 
