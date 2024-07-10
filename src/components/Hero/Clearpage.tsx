@@ -1,5 +1,6 @@
 import { HomeDeal } from '@/lib/product'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { NewProduct } from '../productcards/NewProduct'
 
 const Clearpage = () => {
@@ -9,7 +10,7 @@ const Clearpage = () => {
             <div className='flex gap-5 mx-10 py-7'>
                 {HomeDeal.slice(0, 4).map((HomeDeal)=>{
                    
-                        return <NewProduct {...HomeDeal}/>
+                        return <Link to={"/product"}><NewProduct {...HomeDeal}/></Link>
                     
                 })}
                 
