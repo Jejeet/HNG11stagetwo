@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <footer className='bg-primary'>
      <div className="container py-16">
-      <div className=' flex  justify-center text-white'>
-      <div className='flex flex-col gap-y-5 basis-[30%]'>
-        <h2 className='text-xl'>Contact Us</h2>
+      <div className=' flex flex-col gap-y-5 sm:flex-row sm:justify-between '>
+      <div className='flex flex-col gap-y-3 sm:w-1/3'>
+        <h2 className='text-xl text-white'>Contact Us</h2>
        <div className='space-y-3'>
        <div className='flex gap-3 items-start'>
           <MapPin   className="size-7"/>
@@ -27,8 +27,8 @@ const Footer = () => {
        </div>
       </div>
       
-      <div className='basis-[25%]  flex flex-col gap-y-10  '>
-        <h2 className='text-xl'>Help & Support</h2>
+      <div className='flex flex-col gap-y-5 sm:w-1/4  '>
+        <h2 className='text-xl text-white'>Help & Support</h2>
         <div className='flex flex-col space-y-1 '>
            <a href="http://" className='text-gray-200 font-light'>Deliveries</a> 
            <a href='' className='text-gray-200 font-light'>Store Locator</a>
@@ -39,8 +39,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='basis-[25%] flex flex-col gap-y-5'>
-      <h2 className='text-xl'>Shop by category</h2>
+      <div className='flex flex-col gap-y-5 sm:w-1/4'>
+      <h2 className='text-xl text-white'>Shop by category</h2>
            <div className='flex flex-col space-y-1'>
            <a href="http://" className='text-gray-200 font-light'>New in store</a>
            <a href='' className='text-gray-200 font-light'>Living Room</a>
@@ -50,32 +50,33 @@ const Footer = () => {
            </div>
         
       </div>
-      <div className="flex-3 space-y-4 self-center">
-        <h1 className='text-xl'>Subscribe to our newsletter</h1>
+      <div className="flex-1 flex flex-col sm:mt-0 mt-10">
+        <h1 className='text-xl text-white'>Subscribe to our newsletter</h1>
         <div className='space-y-6'>
-        <span className='flex items-center space bg-white rounded px-2'>
+        <span className='flex items-center space-x-2 bg-white rounded px-2'>
           <Input className='border-none focus:border-non
            active:border-none outline-none
             focus:outline-none focus-visible:ring-0 
-            focus-visible:ring-offset-0 rounded '/> <img src={arrowRight} alt="" /> 
+            focus-visible:ring-offset-0 rounded   focus:border-none text-sm' placeholder='Enter your email'/>
+             <img src={arrowRight} alt="" className='w-4 h-4' /> 
           </span>
-        <div className='flex gap-5'>
-            <div> <img src={X} alt="" /> </div>
-            <div> <img src={facebook} alt="" /></div>
-            <div><img src={pinterest} alt="" /></div>
-            <div><img src={instagram} alt="" /></div>
+        <div className='flex items-center space-x-5'>
+            <div> <img src={X} alt="" className='w-6 h-6' /> </div>
+            <div> <img src={facebook} alt="" className='w-6 h-6' /></div>
+            <div><img src={pinterest} alt="" className='w-6 h-6' /></div>
+            <div><img src={instagram} alt="" className='w-6 h-6' /></div>
         </div>
         </div>
       </div>
       </div>
       {/* last  */}
-      <div className='flex text-white justify-between  mt-20'>
+      <div className='flex flex-col sm:flex-row sm:justify-between text-white mt-10'>
         <div className='flex gap-10'>
           <p className='text-gray-500 font-light text-sm'>Terms & conditons</p>
         <p className='text-gray-500 font-light text-sm'>cookies & Privacy Policy</p>
         </div>
         <div>
-          <p></p>
+          
           <p className='text-gray-500 font-light text-sm'>&copy; 2024 HNG. All rights reserved</p>
         </div>
       </div>
