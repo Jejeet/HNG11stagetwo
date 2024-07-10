@@ -3,7 +3,7 @@ import React from "react";
 import { Homebutton } from "../Buttons/Homebtn";
 const Hero = () => {
   return (
-    <div className="relative bg-[url(@/assets/Hero.png)] w-full lg:h-[690px] ">
+    <div className="relative bg-[url(@/assets/Hero.png)] w-full h-[690px] ">
    <div className="container">
    <div className="absolute  flex flex-col  items-center justify-center top-20 sm:top-24 md:top-[85px] bg-[#D9D9D9C9] p-10 sm:px-10    ">
         <div className=" " >
