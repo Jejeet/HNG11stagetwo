@@ -6,7 +6,7 @@ function HomeNav() {
     <div className='bg-[#C4D7ED] '>
  <div className='flex items-center justify-end space-x-7   container  '>
             <Link to="/">show room</Link>
-            <Link to="/product">about</Link>
+            <Link className="hidden lg:block" to="/product">about</Link>
             <Link to="/product">Inspiration</Link>
             <Link to="/product">Help</Link>
     </div>
