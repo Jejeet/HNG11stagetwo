@@ -1,4 +1,4 @@
-import { Search } from 'lucide-react'
+import { MenuIcon, Search } from 'lucide-react'
 import React from 'react'
 import { Input } from '../ui/input'
 import User from "../../assets/user.png"
@@ -7,13 +7,21 @@ import Logo from "../../assets/Logo.svg"
 import { Link } from 'react-router-dom'
 import NavSub from './NavSub'
 
+
 const NavBar = () => {
+
+  
   return (
     <>
     <div className='bg-primary'>
+
       <div className='flex justify-between items-center py-4 container h-[75px]'>
-        <Link to={"/"}><img src={Logo} alt="" /></Link>
-      <div className='flex items-center justify-between gap-x-36'>
+        <div> 
+          <Link to={"/"}>
+            <img src={Logo} alt="" />
+            </Link>
+          </div> 
+      <div className='hidden lg:flex items-center justify-between gap-x-36'>
       <div className='bg-white   border-tertiary pr-10 flex items-center  rounded-[14px]'>
             <Input className=' py-3 px-2 border-none focus:border-none active:border-none outline-none rounded-[14px] w-[400px] focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0' placeholder='Search' />
             <Search/>
@@ -25,7 +33,12 @@ const NavBar = () => {
 
         </div>
       </div>
+      <div className='lg:hidden' >
+        <MenuIcon/>
+      </div>
     </div>
+
+   
     </div>
     <NavSub/>
     </>
