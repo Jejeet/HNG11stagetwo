@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ChevronLeft className="size-40 md:block hidden" strokeWidth={1} />
+      <ChevronLeft className="lg:size-40 md:block hidden" strokeWidth={1} />
       <span className="sr-only">Previous slide</span>
     </button>
   )
