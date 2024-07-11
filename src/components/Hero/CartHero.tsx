@@ -7,23 +7,23 @@ import { Link } from 'react-router-dom'
 
 const CartHero = () => {
   return (
-    <div className='container '>
-        <div className='flex'>
+    <div className='container  px-4 sm:px-6 lg:px-8'>
+        <div className='flex items-center space-x-2 mb-4'>
         <MoveLeft />
-        <p >CONTINUE SHOPPING</p>
+        <p className="ml-2">CONTINUE SHOPPING</p>
         </div>
-        <div><p className='text-[40px]'>Shopping Bag (7 items)</p></div>
-        <div className='flex justify-between bg-[#ABC8E2] py-1 px-6'>
+        <div>
+            <p className='text-[24px] md:text-[40px]'>Shopping Bag (7 items)</p></div>
+        <div className='flex  justify-between bg-[#ABC8E2] py-1 px-6 '>
            <p>Products</p>
-            <div className='flex   gap-x-40'>
+            <div className=' hidden md:flex gap-x-40'>
                 <div> <p>Unit Price</p></div>
                 <div><p>Quantity</p></div>
                 <div><p>Unit Price</p></div>
             </div>
         </div>
           <Link to="/check">
-            <div className='flex justify-between'>
-            
+            <div className='flex justify-between '> 
             <div className='flex space-x-3'>
                 <div className='bg-gray-100'><img src={Chairs} alt=""  className='w-[100px]'/>
                 </div>
@@ -42,13 +42,15 @@ const CartHero = () => {
                  <p>+</p>
                  </span>
                 </div>
-                <p>#90,000</p>
+                <p className=' md:block hidden'>#90,000</p>
             </div>
             
             
         </div>
         </Link>
+
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
+
         <Link to={"/check"}>
         <div className='flex justify-between'>
             <div className='flex  mb-5 space-x-3'>
@@ -69,7 +71,7 @@ const CartHero = () => {
                  <p>+</p>
                  </span>
                 </div>
-                <p>#90,000</p>
+                <p className=' md:block hidden'>#90,000</p>
             </div>
             
         </div>
@@ -90,12 +92,12 @@ const CartHero = () => {
             <div className='flex flex-row space-x-11 items-center gap-x-28 '>
                 <p>#90,000</p>
                 <div>
-                <span className='flex gap-8 border    py-1 px-2'><p>-</p>
+                <span className='flex sm:gap-4  sm:py-0.5 border py-1 px-2'><p>-</p>
                  <p>5</p> 
                  <p>+</p>
                  </span>
                 </div>
-                <p>#90,000</p>
+                <p className=' md:block hidden'>#90,000</p>
             </div>
             
         </div>
@@ -105,7 +107,7 @@ const CartHero = () => {
 
 
 
-<div className='flex  items-center justify-between h-44 my-6 gap-5'>
+<div className='hidden md:flex md:items-center md:justify-between md:h-44 md:my-6 md:gap-5 '>
 <div className='flex flex-col space-y-3 basis-[45%]' >
     <p>Discount or gift voucher?</p>
     <div className='flex space-x-8'> 
