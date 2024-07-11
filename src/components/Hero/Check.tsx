@@ -24,7 +24,10 @@ export default function Check() {
     </RadioGroup>
       </div>
       <Link to={"/card"}>
+        <div className=" flex justify-end">
         <Button className="  sm:w-auto self-center sm:self-end mt-10 py-3 sm:py-6 px-3 bg-[#183152] hover:bg-[#183152] text-white">PROCEED TO PAYMENT</Button>
+        </div>
+        
         </Link>
     </form>
   </div>
