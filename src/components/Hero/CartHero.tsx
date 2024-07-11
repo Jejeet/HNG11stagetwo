@@ -14,7 +14,7 @@ const CartHero = () => {
         </div>
         <div>
             <p className='text-[24px] md:text-[40px]'>Shopping Bag (7 items)</p></div>
-        <div className='flex  justify-between bg-[#ABC8E2] py-1 px-6 '>
+        <div className='flex  justify-between bg-[#ABC8E2] py-1 px-6 mt-5'>
            <p>Products</p>
             <div className=' hidden md:flex gap-x-40'>
                 <div> <p>Unit Price</p></div>
@@ -23,11 +23,11 @@ const CartHero = () => {
             </div>
         </div>
           <Link to="/check">
-            <div className='flex justify-between '> 
-            <div className='flex space-x-3'>
-                <div className='bg-gray-100'><img src={Chairs} alt=""  className='w-[100px]'/>
+            <div className='flex flex-col sm:flex-row justify-between mb-5 space-y-4 sm:space-y-0 sm:space-x-3 '> 
+            <div className='flex flex-col sm:flex-row space-x-0 sm:space-x-3'>
+                <div className='bg-gray-100 h-full w-full sm:w-auto sm:flex-none'><img src={Chairs} alt=""  className='w-full h-full'/>
                 </div>
-                <div className='py-3 space-y-3'> 
+                <div className='py-6 space-y-14'> 
                 <p className=''>Product Name - Color</p>
                 <p className='text-sm font-light text-gray-500'>Estimated delivery within 7 working days</p>
                 <p className='flex text-sm font-light '> <Heart /> <h3>Move to whishlist</h3></p>
@@ -52,11 +52,11 @@ const CartHero = () => {
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
 
         <Link to={"/check"}>
-        <div className='flex justify-between'>
-            <div className='flex  mb-5 space-x-3'>
-                <div  className='bg-gray-100 '><img src={Chairs} alt=""  className='w-[100px]'/>
+        <div className='flex flex-col sm:flex-row justify-between mb-5 space-y-4 sm:space-y-0 sm:space-x-3'>
+            <div className='flex flex-col sm:flex-row space-x-0 sm:space-x-3'>
+                <div  className='bg-gray-100 h-full w-full sm:w-auto sm:flex-none '><img src={Chairs} alt=""  className='w-full h-full'/>
                 </div>
-                <div className='py-3 space-y-3'> 
+                <div className='py-6 space-y-14'> 
                 <p className=''>Product Name - Color</p>
                 <p className='text-sm font-light text-gray-500'>Estimated delivery within 7 working days</p>
                 <p className='flex text-sm font-light '> <Heart /> <h3>Move to whishlist</h3></p>
@@ -66,9 +66,10 @@ const CartHero = () => {
             <div className='flex flex-row space-x-11 items-center gap-x-28 '>
                 <p>#90,000</p>
                 <div>
-                <span className='flex gap-8 border    py-1 px-2'><p>-</p>
-                 <p>5</p> 
-                 <p>+</p>
+                <span className='flex gap-8 border    py-1 px-2'>
+                    <p>-</p>
+                 <p >5</p> 
+                 <p >+</p>
                  </span>
                 </div>
                 <p className=' md:block hidden'>#90,000</p>
@@ -78,11 +79,11 @@ const CartHero = () => {
         </Link>
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
         <Link to={"/check"}>
-        <div className='flex justify-between'>
-            <div className='flex  mb-5 space-x-3'>
-                <div  className='bg-gray-100 '><img src={Chairs} alt=""  className='w-[100px]'/>
+        <div className='flex flex-col sm:flex-row justify-between mb-5 space-y-4 sm:space-y-0 sm:space-x-3  '>
+            <div className='flex flex-col sm:flex-row space-x-0 sm:space-x-3'>
+                <div  className='bg-gray-100 h-full w-full sm:w-auto sm:flex-none '><img src={Chairs} alt=""  className='w-full h-full' />
                 </div>
-                <div className='py-3 space-y-3'> 
+                <div className='py-6 space-y-14 '> 
                 <p className=''>Product Name - Color</p>
                 <p className='text-sm font-light text-gray-500'>Estimated delivery within 7 working days</p>
                 <p className='flex text-sm font-light '> <Heart /> <h3>Move to whishlist</h3></p>
@@ -92,9 +93,10 @@ const CartHero = () => {
             <div className='flex flex-row space-x-11 items-center gap-x-28 '>
                 <p>#90,000</p>
                 <div>
-                <span className='flex sm:gap-4  sm:py-0.5 border py-1 px-2'><p>-</p>
-                 <p>5</p> 
-                 <p>+</p>
+                <span className='flex gap-8 border    py-1 px-2'>
+                    <p >-</p>
+                 <p >5</p> 
+                 <p >+</p>
                  </span>
                 </div>
                 <p className=' md:block hidden'>#90,000</p>
