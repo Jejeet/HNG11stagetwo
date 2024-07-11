@@ -3,9 +3,11 @@ import SittingRoom from "@/assets/inspiration1.png"
 import Kitchen from "@/assets/inspiration2.png"
 const Inspiration = () => {
   return (
-    <div className=" flex flex-col items-center justify-center bg-[#E1E6FA] pb-10">
+    <div className=" bg-[#E1E6FA]">
+      <div className="container">
+      <div className=" flex flex-col items-center justify-center  pb-10">
       <h2 className="pb-8 pt-4 text-xl">INSPIRATIONAL IDEAS</h2>
-      <div className="flex flex-col w-full lg:w-[1364px] px-4 sm:px-10 lg:px-20" >
+      <div className="flex flex-col w-full" >
         <div className="flex flex-col lg:flex-row mb-4">
           <div className=" w-full lg:w-1/2">
             <img src={SittingRoom} alt=""  className="w-full" />
@@ -44,6 +46,9 @@ const Inspiration = () => {
           </div>
         </div>
       </div>
+    </div>
+      </div>
+     
     </div>
   );
 };

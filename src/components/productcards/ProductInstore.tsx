@@ -12,11 +12,11 @@ import ProductPricing from "./ProductPricing"
 type productInstoreType = {title:string, image?:string, id:string|number, sellingPrice:number}
 export function ProductInstore({title, image="https://picsum.photos/200/300", id, sellingPrice}:productInstoreType) {
   return (
-    <Card className=" border-none relative" key={id}>
+    <Card className=" border-none relative " key={id} >
       <CardHeader className="bg-[#F5F5F3] p-10">
-      <img src={image} className="  object-cover mt-3"/>
+      <img src={image} className= "object-cover mt-3"/>
       </CardHeader>
-      <CardContent className="p-0 pt-0"> 
+      <CardContent className="p-0 pt-0 "> 
          <Heart className=" stroke-gray-500  absolute top-[22px] left-[1rem]  size-8"/>
          <img src={newBadge} alt={title}  className="absolute top-[2px] right-[1px]  size-18" />
       </CardContent>
