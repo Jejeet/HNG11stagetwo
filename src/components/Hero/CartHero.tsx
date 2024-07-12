@@ -107,6 +107,43 @@ const CartHero = () => {
         <hr className='mb-4 p-[0.5px] bg-gray-900'/>
        
 
+{/* <div className="overflow-x-auto">
+  <table className="min-w-full divide-y divide-gray-200 bg-[#ABC8E2] mt-5">
+    <thead>
+      <tr>
+        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Products</th>
+        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Unit Price</th>
+        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Quantity</th>
+        <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">Total</th>
+      </tr>
+    </thead>
+    <tbody className="bg-white divide-y divide-gray-200">
+      {[...Array(3)].map((_, index) => (
+        <tr key={index}>
+          <td className="px-6 py-4 whitespace-nowrap flex flex-col sm:flex-row">
+            <div className="bg-gray-100 h-full w-full sm:w-auto sm:flex-none"><img src={Chairs} alt="" className="w-full h-full" /></div>
+            <div className="py-6 space-y-2 sm:pl-4">
+              <p className="">Product Name - Color</p>
+              <p className="text-sm font-light text-gray-500">Estimated delivery within 7 working days</p>
+              <p className="flex text-sm font-light"><Heart /><span className="pl-2">Move to wishlist</span></p>
+              <p className="flex text-sm font-light"><Trash2 /><span className="pl-2">Remove</span></p>
+            </div>
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap hidden md:table-cell">#90,000</td>
+          <td className="px-6 py-4 whitespace-nowrap">
+            <div className="flex gap-2 justify-center items-center border px-2 py-1">
+              <button className="px-1">-</button>
+              <p>5</p>
+              <button className="px-1">+</button>
+            </div>
+          </td>
+          <td className="px-6 py-4 whitespace-nowrap hidden md:table-cell">#90,000</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<hr className="mb-4 p-[0.5px] bg-gray-900" /> */}
 
 
 <div className='hidden md:flex md:items-center md:justify-between md:h-44 md:my-6 md:gap-5 '>
