@@ -1,6 +1,7 @@
 
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
+import SingleProduct from "./components/Hero/SingleProduct";
 import Transfer from "./components/Hero/Transfer";
 import RootLayout from "./components/layouts/RootLayout";
 import CardPayment from "./pages/CardPayment";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
           ,{
             path: "/product",
             element: <ProductList/>
+          },
+          {
+            path: "/singleProduct",
+            element: <SingleProduct/>
           },
           {
             path: "/cart",

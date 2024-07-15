@@ -6,14 +6,16 @@ import { Link } from 'react-router-dom'
 
 import { ProductListcard } from '../productcards/productListcard'
 // const URL = `/api/products?organization_id=7c9910e9776b4b77848011cf9d988ca3&reverse_sort=false&page=1&size=20&Appid=${import.meta.env.VITE_APP_ID}&Apikey=${import.meta.env.VITE_API_KEY}`
-
+interface Photo{
+  url:string
+}
  interface Product{
   id: number|string
   name: string
   description:string
   price: number
   available_quantity:number
-  photos:object[]
+  photos:Photo[]
   sellingPrice: number
   originalPrice: number
  }

@@ -11,22 +11,29 @@ import { Heart } from "lucide-react"
 import ProductShoppingBag from "./ProductShoppingBag"
 import ProductColorBadge from "./ProductColorBadge"
 import ProductPricing from "./ProductPricing"
+import { Link } from "react-router-dom"
 // type ProductListcardType = {title:string, image:string, id:string|number, sellingPrice:number, originalPrice:number}
+interface Photo{
+  url:string
+}
 interface Product{
   id: number|string
   name: string
   description:string
   price: number
   available_quantity:number
-  photos:object[]
+  photos:Photo[]
   sellingPrice: number
   originalPrice: number
+ 
+  
  }
-export function ProductListcard( {photos, name,description,sellingPrice,originalPrice}:Product){
+export function ProductListcard( {photos, name,description,sellingPrice,originalPrice,}:Product){
+  console.log(photos[0].url)
   return (
     <Card className="w-12/4 border-none relative  " >
       <CardHeader className="bg-[#F5F5F3] p-10">
-      <img src={`https://api.timbu.cloud/images/${photos[0]?.url}`} className=" h-[210px] object-cover mt-3"/>
+        <Link to="/singleProduct"><img src={`https://api.timbu.cloud/images/${photos[0]?.url}`} className=" h-[210px] object-cover mt-3"/></Link>
       </CardHeader>
       <CardContent className="p-0 pt-0"> 
          <Heart className=" stroke-[#183152]  absolute top-[22px] left-[1rem]  size-8"/>
