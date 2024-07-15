@@ -30,10 +30,10 @@ export const products: { title: string, sellingPrice: number, image: string, ori
     { title: "External Hard Drive", sellingPrice: 99.9, image: "/products/Bed.png", originalPrice: 99.9, id: 20 }
 ];
 export const HomeDeal: { title: string, sellingPrice: number, image: string, originalPrice: number, id: string | number }[] = [
-  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 1 },
-  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 1 },
-  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 1 },
-  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 1 },
+  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 21 },
+  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 22 },
+  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 23 },
+  { title: "KUBRIC - ARMCHAIR", sellingPrice: 99.0, image: "/products/chairs.png", originalPrice: 99.0, id: 24 },
   
 ];
 export const SafeStool: { title: string, sellingPrice: number, image: string, originalPrice: number, id: string | number }[] = [
@@ -46,9 +46,9 @@ export const Diplay: { title: string, image: string,  id: string | number }[] = 
   { title: "Tv Stand",  image: "/products/consoledeck.png",  id: 1 },
   { title: " Table",  image: "/products/Table.png",  id: 2 },
   { title: "sofa",  image:"/products/Doublechair.png",  id: 3 },
-  { title: "ArmChairs",  image: "/products/Single.png",  id: 1 },
-  { title: "Dinner Chairs",  image: "/products/resortSingle.png",  id: 2 },
-  { title: "Smart Furniture",  image: "/products/SmartFurniture.png",  id: 3 },
-  { title: "Leather chair",  image: "/products/Singlechair.png",  id: 3 },
+  { title: "ArmChairs",  image: "/products/Single.png",  id: 4 },
+  { title: "Dinner Chairs",  image: "/products/resortSingle.png",  id: 5 },
+  { title: "Smart Furniture",  image: "/products/SmartFurniture.png",  id: 6 },
+  { title: "Leather chair",  image: "/products/Singlechair.png",  id: 7 },
  
 ];
