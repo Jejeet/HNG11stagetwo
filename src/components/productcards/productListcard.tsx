@@ -22,7 +22,7 @@ interface Product{
   description:string
   price: number
   available_quantity:number
-  photos:Photo[]
+  photos:Photo[]|string
   sellingPrice: number
   originalPrice: number
  
