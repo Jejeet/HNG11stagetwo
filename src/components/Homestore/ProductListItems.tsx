@@ -1,8 +1,8 @@
 // import { products } from '@/lib/product'
-// import { title } from 'process'
+
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-// import { number, string } from 'zod'
+
 
 import { ProductListcard } from '../productcards/productListcard'
 // const URL = `/api/products?organization_id=7c9910e9776b4b77848011cf9d988ca3&reverse_sort=false&page=1&size=20&Appid=${import.meta.env.VITE_APP_ID}&Apikey=${import.meta.env.VITE_API_KEY}`

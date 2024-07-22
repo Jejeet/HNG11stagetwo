@@ -35,13 +35,13 @@ export function ProductListcard( {photos, name,description,sellingPrice,original
 
   if (Array.isArray(photos)) {
     photoUrl = photos[0]?.url || '';
-  } else {
+  } else if (typeof photos === 'string') {
     photoUrl = photos;
   }
   return (
     <Card className="w-12/4 border-none relative  " >
       <CardHeader className="bg-[#F5F5F3] p-10">
-        <Link to="/singleProduct"><img src={`https://api.timbu.cloud/images/${photoUrl}`} className=" h-[210px] object-cover mt-3"/></Link>
+        <Link to="/singleProduct"><img src={`api.timbu.cloud/images/${photoUrl}`} className=" h-[210px] object-cover mt-3"/></Link>
       </CardHeader>
       <CardContent className="p-0 pt-0"> 
          <Heart className=" stroke-[#183152]  absolute top-[22px] left-[1rem]  size-8"/>
