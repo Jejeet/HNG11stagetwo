@@ -41,7 +41,14 @@ export function ProductListcard( {photos, name,description,sellingPrice,original
   return (
     <Card className="w-12/4 border-none relative  " >
       <CardHeader className="bg-[#F5F5F3] p-10">
-        <Link to="/singleProduct"><img src={`api.timbu.cloud/images/${photoUrl}`} className=" h-[210px] object-cover mt-3"/></Link>
+      <Link to={`/singleProduct/${name.replace(/\s+/g, '-').toLowerCase()}`}>
+          <img
+            src={`https://api.timbu.cloud/images/${photoUrl}`}
+            onError={(e) => (e.currentTarget.src = 'https://via.placeholder.com/210')} // Use a known-good fallback image
+            className="h-[210px] object-cover mt-3"
+            alt={name}
+          />
+          </Link>
       </CardHeader>
       <CardContent className="p-0 pt-0"> 
          <Heart className=" stroke-[#183152]  absolute top-[22px] left-[1rem]  size-8"/>
