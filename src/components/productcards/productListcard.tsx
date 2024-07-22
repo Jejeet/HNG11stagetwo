@@ -29,7 +29,7 @@ interface Product{
   
  }
 export function ProductListcard( {photos, name,description,sellingPrice,originalPrice,}:Product){
-  console.log(photos[0].url)
+  
   return (
     <Card className="w-12/4 border-none relative  " >
       <CardHeader className="bg-[#F5F5F3] p-10">
