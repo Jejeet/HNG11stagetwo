@@ -25,7 +25,7 @@ const Clearpage = () => {
   const [product, setProduct] = useState<Product[]>([])
 
   const fetchProduct = async (pageNumber:number)=>{
-    const URL = `/api/products?organization_id=7c9910e9776b4b77848011cf9d988ca3&reverse_sort=false&page=${pageNumber}&size=12&Appid=${import.meta.env.VITE_APP_ID}&Apikey=${import.meta.env.VITE_API_KEY}`
+    const URL = `https://api.timbu.cloud/products?organization_id=7c9910e9776b4b77848011cf9d988ca3&reverse_sort=false&page=${pageNumber}&size=12&Appid=${import.meta.env.VITE_APP_ID}&Apikey=${import.meta.env.VITE_API_KEY}`
     const response = await fetch(URL)
     const data = await response.json()
     setProduct(data.items)
